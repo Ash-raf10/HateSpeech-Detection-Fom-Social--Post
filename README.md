@@ -1,7 +1,7 @@
 
 # Hate-Speech Detection From Social Media Post
 
-The aim of this project is to detect or identify hate-speech from the social media post like facebook and twiiter.In this model pre trained word embeddings(using FastText) is used on the keras sequential model.The initial dataset was collected from ( github.com/t-davidson/hate-speech-and-offensive-language).Using FastText cbow model word vectors were created from the dataset.Then this vector file is feeded to the keras model.
+The aim of this project is to detect or identify hate-speech from the social media post like facebook and twiiter.In this model pre trained word embeddings(using FastText) is used on the keras sequential model.The initial dataset was collected from ( github.com/t-davidson/hate-speech-and-offensive-language).Using FastText cbow model word vectors were created from the dataset.Then this vector file is feeded to the keras model..As the vec file is too large it could not be uploaded.But using fastetext is not a big deal.You can easily create this.
 
 For using fastetext please refer to:::https://pypi.org/project/fasttext-win/ and for mac os and linux :::https://fasttext.cc/
 
