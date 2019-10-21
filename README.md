@@ -37,7 +37,7 @@ from tqdm import tqdm
 import os, re, csv, math, codecs
 ```
 
-    Using TensorFlow backend.
+
     
 
 # Loading the pre trained word embedding file
@@ -215,12 +215,6 @@ model.summary()
 ```
 
     training CNN ...
-    WARNING:tensorflow:From G:\Anaconda\lib\site-packages\tensorflow\python\framework\op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
-    Instructions for updating:
-    Colocations handled automatically by placer.
-    WARNING:tensorflow:From G:\Anaconda\lib\site-packages\keras\backend\tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
-    Instructions for updating:
-    Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
     _________________________________________________________________
     Layer (type)                 Output Shape              Param #   
     =================================================================
@@ -257,12 +251,7 @@ model.summary()
 hist = model.fit(word_seq_train, y_train, batch_size=batch_size, epochs=num_epochs, validation_data=(word_seq_test, y_test), verbose=2)
 ```
 
-    WARNING:tensorflow:From G:\Anaconda\lib\site-packages\tensorflow\python\ops\math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
-    Instructions for updating:
-    Use tf.cast instead.
-    WARNING:tensorflow:From G:\Anaconda\lib\site-packages\tensorflow\python\ops\math_grad.py:102: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
-    Instructions for updating:
-    Deprecated in favor of operator or tf.math.divide.
+ 
     Train on 17433 samples, validate on 7350 samples
     Epoch 1/10
      - 15s - loss: 0.1719 - acc: 0.8311 - val_loss: 0.0805 - val_acc: 0.9076
